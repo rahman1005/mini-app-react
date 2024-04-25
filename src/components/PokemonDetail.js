@@ -15,6 +15,9 @@ function PokemonDetail({ data }) {
         <Typography.Text style={{ color: "#5a4a9c" }}>
           Id: {data.id}
         </Typography.Text>
+        {data.evolutions.map((item) => (
+          <p>{item}</p>
+        ))}
         <Typography.Text style={{ color: "#5a4a9c" }}>
           Location: {data.location}
         </Typography.Text>
